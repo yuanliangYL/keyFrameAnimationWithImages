@@ -14,6 +14,12 @@
 		57238F2F271D836D007CB453 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57238F2E271D836D007CB453 /* Assets.xcassets */; };
 		57238F32271D836D007CB453 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57238F30271D836D007CB453 /* LaunchScreen.storyboard */; };
 		57238F35271D836D007CB453 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 57238F34271D836D007CB453 /* main.m */; };
+		57238F40271D8385007CB453 /* open.json in Resources */ = {isa = PBXBuildFile; fileRef = 57238F3C271D8385007CB453 /* open.json */; };
+		57238F41271D8385007CB453 /* light.png in Resources */ = {isa = PBXBuildFile; fileRef = 57238F3D271D8385007CB453 /* light.png */; };
+		57238F42271D8385007CB453 /* light.json in Resources */ = {isa = PBXBuildFile; fileRef = 57238F3E271D8385007CB453 /* light.json */; };
+		57238F43271D8385007CB453 /* open.png in Resources */ = {isa = PBXBuildFile; fileRef = 57238F3F271D8385007CB453 /* open.png */; };
+		57238F46271D83A5007CB453 /* UIImage+Sprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 57238F45271D83A5007CB453 /* UIImage+Sprite.m */; };
+		57A353CD2727986E00BC902C /* box.png in Resources */ = {isa = PBXBuildFile; fileRef = 57A353CC2727986E00BC902C /* box.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +35,13 @@
 		57238F31271D836D007CB453 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57238F33271D836D007CB453 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57238F34271D836D007CB453 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		57238F3C271D8385007CB453 /* open.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = open.json; sourceTree = "<group>"; };
+		57238F3D271D8385007CB453 /* light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = light.png; sourceTree = "<group>"; };
+		57238F3E271D8385007CB453 /* light.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = light.json; sourceTree = "<group>"; };
+		57238F3F271D8385007CB453 /* open.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = open.png; sourceTree = "<group>"; };
+		57238F44271D83A5007CB453 /* UIImage+Sprite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Sprite.h"; sourceTree = "<group>"; };
+		57238F45271D83A5007CB453 /* UIImage+Sprite.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Sprite.m"; sourceTree = "<group>"; };
+		57A353CC2727986E00BC902C /* box.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = box.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +74,7 @@
 		57238F21271D836B007CB453 /* keyFrameAnimationWithImages */ = {
 			isa = PBXGroup;
 			children = (
+				57238F3B271D8385007CB453 /* Resources */,
 				57238F22271D836B007CB453 /* AppDelegate.h */,
 				57238F23271D836B007CB453 /* AppDelegate.m */,
 				57238F25271D836B007CB453 /* SceneDelegate.h */,
@@ -68,12 +82,26 @@
 				57238F28271D836B007CB453 /* ViewController.h */,
 				57238F29271D836B007CB453 /* ViewController.m */,
 				57238F2B271D836B007CB453 /* Main.storyboard */,
+				57238F44271D83A5007CB453 /* UIImage+Sprite.h */,
+				57238F45271D83A5007CB453 /* UIImage+Sprite.m */,
 				57238F2E271D836D007CB453 /* Assets.xcassets */,
 				57238F30271D836D007CB453 /* LaunchScreen.storyboard */,
 				57238F33271D836D007CB453 /* Info.plist */,
 				57238F34271D836D007CB453 /* main.m */,
 			);
 			path = keyFrameAnimationWithImages;
+			sourceTree = "<group>";
+		};
+		57238F3B271D8385007CB453 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				57A353CC2727986E00BC902C /* box.png */,
+				57238F3C271D8385007CB453 /* open.json */,
+				57238F3D271D8385007CB453 /* light.png */,
+				57238F3E271D8385007CB453 /* light.json */,
+				57238F3F271D8385007CB453 /* open.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,9 +160,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57238F41271D8385007CB453 /* light.png in Resources */,
 				57238F32271D836D007CB453 /* LaunchScreen.storyboard in Resources */,
+				57238F42271D8385007CB453 /* light.json in Resources */,
+				57A353CD2727986E00BC902C /* box.png in Resources */,
 				57238F2F271D836D007CB453 /* Assets.xcassets in Resources */,
 				57238F2D271D836B007CB453 /* Main.storyboard in Resources */,
+				57238F40271D8385007CB453 /* open.json in Resources */,
+				57238F43271D8385007CB453 /* open.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +182,7 @@
 				57238F24271D836B007CB453 /* AppDelegate.m in Sources */,
 				57238F35271D836D007CB453 /* main.m in Sources */,
 				57238F27271D836B007CB453 /* SceneDelegate.m in Sources */,
+				57238F46271D83A5007CB453 /* UIImage+Sprite.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
