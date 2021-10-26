@@ -23,16 +23,24 @@
                                     <constraint firstAttribute="width" constant="325" id="a3l-3Y-FIB"/>
                                 </constraints>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qOS-nq-leI">
+                                <rect key="frame" x="44" y="248" width="326" height="355"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="qOS-nq-leI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.95" id="DoA-be-Rq9"/>
+                            <constraint firstItem="qOS-nq-leI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HWd-BT-YYw"/>
+                            <constraint firstItem="qOS-nq-leI" firstAttribute="height" secondItem="VSA-5D-74A" secondAttribute="height" multiplier="0.883085" id="Rfe-Cn-UTd"/>
                             <constraint firstItem="VSA-5D-74A" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SZW-G6-1Dz"/>
+                            <constraint firstItem="qOS-nq-leI" firstAttribute="width" secondItem="VSA-5D-74A" secondAttribute="width" multiplier="1.00308" id="d4B-nS-FUi"/>
                             <constraint firstItem="VSA-5D-74A" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yf4-pL-cCh"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="lightView" destination="VSA-5D-74A" id="diz-Vo-JNk"/>
+                        <outlet property="startview" destination="qOS-nq-leI" id="YDS-cT-thr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
