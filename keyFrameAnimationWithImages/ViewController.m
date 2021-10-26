@@ -13,10 +13,10 @@
 
 @property (nonatomic, strong)  NSMutableArray *boxbigImages;
 
-@property (nonatomic, strong)  NSMutableArray *boxImages;
-
 @property (nonatomic,strong) NSTimer *animationLink;
+
 @property (nonatomic, assign)  BOOL layerAnima;
+
 @end
 
 
@@ -29,13 +29,27 @@
 
     [self setScaleAnimationForLayer:self.lightView.layer];
 
-
     self.boxbigImages = [NSMutableArray array];
-    self.boxImages = [NSMutableArray array];
 
-    UIImage *light = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"open.png" ofType:nil]];
-    self.boxbigImages = [[UIImage spritesWithSpriteSheetImage:light spriteSize:CGSizeMake(324, 402)] mutableCopy];
-    self.boxImages = [[self.boxbigImages subarrayWithRange:NSMakeRange(6, 4)] mutableCopy];
+//    模拟网路或本地精灵图获取与分解
+//    UIImage *light = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"open.png" ofType:nil]];
+//    self.boxbigImages = [[UIImage spritesWithSpriteSheetImage:light spriteSize:CGSizeMake(324, 402)] mutableCopy];
+
+//    图片获取测试
+//    for (int i = 0; i < self.boxbigImages.count; i ++) {
+//        NSString *path_document = NSHomeDirectory();
+//        //设置一个图片的存储路径
+//        NSString *imagePath = [path_document stringByAppendingString:[NSString stringWithFormat:@"/Documents/pic%d.png",i]];
+//        NSLog(@"%@",imagePath);
+//        //把图片直接保存到指定的路径（同时应该把图片的路径imagePath存起来，下次就可以直接用来取）
+//        [UIImagePNGRepresentation(self.boxbigImages[i]) writeToFile:imagePath atomically:YES];
+//    }
+
+
+    for (int i = 0; i <  36; i ++) {
+        NSString *image = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"pic%d.png",i] ofType:nil];
+        [self.boxbigImages addObject:[UIImage imageWithContentsOfFile:image]];
+    }
 
     self.layerAnima = YES;
     self.animationLink = [NSTimer scheduledTimerWithTimeInterval:0.2 target:self selector:@selector(onTimer) userInfo:nil repeats:YES];
@@ -80,11 +94,12 @@
 -(void)onTimer{
     //NSLog(@"%@",self.lightView.isAnimating? @"animating" : @"stop");
     if (!self.lightView.isAnimating && !self.layerAnima) {
-            self.layerAnima = YES;
-            [self.lightView.layer removeAllAnimations];
-            [self setScaleAnimationForLayer:self.lightView.layer];
-            [self.lightView stopAnimating];
-            self.lightView.animationImages = nil;
+        self.layerAnima = YES;
+        [self.lightView.layer removeAllAnimations];
+        [self setScaleAnimationForLayer:self.lightView.layer];
+
+        [self.lightView stopAnimating];
+        self.lightView.animationImages = nil;
     }
 }
 
