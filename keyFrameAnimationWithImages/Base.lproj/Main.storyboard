@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,36 +13,35 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Afb-MY-iDp">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="box.png" translatesAutoresizingMaskIntoConstraints="NO" id="VSA-5D-74A">
-                                <rect key="frame" x="44.5" y="247" width="325" height="402"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="402" id="0Xj-90-Dje"/>
-                                    <constraint firstAttribute="width" constant="325" id="a3l-3Y-FIB"/>
-                                </constraints>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="box.png" translatesAutoresizingMaskIntoConstraints="NO" id="VSA-5D-74A">
+                                <rect key="frame" x="93" y="239.33333333333334" width="228" height="257.33333333333326"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qOS-nq-leI">
-                                <rect key="frame" x="44" y="248" width="326" height="355"/>
+                                <rect key="frame" x="93" y="243" width="228" height="250"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="Afb-MY-iDp" secondAttribute="bottom" id="6aN-3v-OaA"/>
-                            <constraint firstItem="Afb-MY-iDp" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="A0O-II-DA4"/>
-                            <constraint firstItem="Afb-MY-iDp" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Cl0-TH-keK"/>
-                            <constraint firstItem="qOS-nq-leI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.95" id="DoA-be-Rq9"/>
-                            <constraint firstItem="qOS-nq-leI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HWd-BT-YYw"/>
-                            <constraint firstItem="qOS-nq-leI" firstAttribute="height" secondItem="VSA-5D-74A" secondAttribute="height" multiplier="0.883085" id="Rfe-Cn-UTd"/>
-                            <constraint firstItem="VSA-5D-74A" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SZW-G6-1Dz"/>
-                            <constraint firstItem="qOS-nq-leI" firstAttribute="width" secondItem="VSA-5D-74A" secondAttribute="width" multiplier="1.00308" id="d4B-nS-FUi"/>
-                            <constraint firstItem="VSA-5D-74A" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yf4-pL-cCh"/>
-                            <constraint firstItem="Afb-MY-iDp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ywC-kD-hYN"/>
+                            <constraint firstItem="Afb-MY-iDp" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="2ct-5v-O8t"/>
+                            <constraint firstItem="qOS-nq-leI" firstAttribute="centerY" secondItem="VSA-5D-74A" secondAttribute="centerY" id="3u4-xk-IoC"/>
+                            <constraint firstItem="VSA-5D-74A" firstAttribute="height" secondItem="Afb-MY-iDp" secondAttribute="height" multiplier="0.35" id="Emu-yb-ZFp"/>
+                            <constraint firstItem="VSA-5D-74A" firstAttribute="width" secondItem="Afb-MY-iDp" secondAttribute="width" multiplier="0.55" id="GYV-mv-Sp9"/>
+                            <constraint firstItem="qOS-nq-leI" firstAttribute="height" secondItem="VSA-5D-74A" secondAttribute="height" multiplier="0.969789" id="JSx-0e-fpa"/>
+                            <constraint firstItem="qOS-nq-leI" firstAttribute="width" secondItem="VSA-5D-74A" secondAttribute="width" id="M5V-dg-ows"/>
+                            <constraint firstAttribute="bottom" secondItem="Afb-MY-iDp" secondAttribute="bottom" id="NRo-fC-bOd"/>
+                            <constraint firstItem="qOS-nq-leI" firstAttribute="centerX" secondItem="VSA-5D-74A" secondAttribute="centerX" id="QvI-qQ-KfN"/>
+                            <constraint firstItem="Afb-MY-iDp" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="RE7-Rm-eZa"/>
+                            <constraint firstItem="VSA-5D-74A" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="VAs-vb-5z9"/>
+                            <constraint firstItem="VSA-5D-74A" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ebp-ov-l1G"/>
+                            <constraint firstItem="Afb-MY-iDp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="h9W-Pu-vwe"/>
                         </constraints>
                     </view>
                     <connections>
@@ -52,7 +51,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="131.8840579710145" y="77.678571428571431"/>
+            <point key="canvasLocation" x="130.43478260869566" y="76.630434782608702"/>
         </scene>
     </scenes>
     <resources>

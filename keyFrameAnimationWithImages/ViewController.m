@@ -83,21 +83,25 @@
     scale.fromValue = @1;
     scale.toValue = @0.7;
 
-    CABasicAnimation *y = [[CABasicAnimation animation] init];
-    y .keyPath =  @"position.y";
-    y .fromValue =  @(layer.position.y); //[NSValue valueWithCGPoint:layer.position];
-    y .toValue = @(layer.position.y - 80); //[NSValue valueWithCGPoint:CGPointMake(layer.position.x, layer.position.y)];
+//    CABasicAnimation *y = [[CABasicAnimation animation] init];
+//    y.keyPath =  @"position.y";
+//    y.fromValue =  @(layer.position.y); //[NSValue valueWithCGPoint:layer.position];
+//    y.toValue = @(layer.position.y - 80); //[NSValue valueWithCGPoint:CGPointMake(layer.position.x, layer.position.y)];
 
     CAAnimationGroup *group = [[CAAnimationGroup alloc] init];
     group .autoreverses = YES;
     group.repeatCount = MAXFLOAT;
     group .duration = 0.8;
-    group.animations = @[y,scale];
+    group.animations = @[scale]; //y,
 
     [layer addAnimation:group forKey:@"transform_group"];
 }
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+
+    if (self.lightView.isAnimating) {
+        return;
+    }
 
     [self boxgifAnimaiton];
 }
