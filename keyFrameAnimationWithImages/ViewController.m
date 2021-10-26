@@ -92,6 +92,7 @@
     group .autoreverses = YES;
     group.repeatCount = MAXFLOAT;
     group .duration = 0.8;
+    group.removedOnCompletion = NO;
     group.animations = @[scale]; //y,
 
     [layer addAnimation:group forKey:@"transform_group"];
@@ -113,6 +114,7 @@
     self.lightView.animationImages = self.boxbigImages;
     self.lightView.animationDuration = 2;
     self.lightView.animationRepeatCount = 1;
+
     [self.lightView startAnimating];
     self.layerAnima = NO;
 
