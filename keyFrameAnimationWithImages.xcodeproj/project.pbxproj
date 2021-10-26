@@ -81,6 +81,7 @@
 		57A355932727B45800BC902C /* light16.png in Resources */ = {isa = PBXBuildFile; fileRef = 57A3557A2727B45800BC902C /* light16.png */; };
 		57A355942727B45800BC902C /* light23.png in Resources */ = {isa = PBXBuildFile; fileRef = 57A3557B2727B45800BC902C /* light23.png */; };
 		57A355952727B45800BC902C /* light8.png in Resources */ = {isa = PBXBuildFile; fileRef = 57A3557C2727B45800BC902C /* light8.png */; };
+		57A355972727C1A600BC902C /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 57A355962727C1A600BC902C /* bg.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -164,6 +165,7 @@
 		57A3557A2727B45800BC902C /* light16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = light16.png; sourceTree = "<group>"; };
 		57A3557B2727B45800BC902C /* light23.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = light23.png; sourceTree = "<group>"; };
 		57A3557C2727B45800BC902C /* light8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = light8.png; sourceTree = "<group>"; };
+		57A355962727C1A600BC902C /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +210,7 @@
 				57238F45271D83A5007CB453 /* UIImage+Sprite.m */,
 				57238F2E271D836D007CB453 /* Assets.xcassets */,
 				57238F30271D836D007CB453 /* LaunchScreen.storyboard */,
+				57A355962727C1A600BC902C /* bg.jpg */,
 				57A3551B2727B44F00BC902C /* Images */,
 				57238F33271D836D007CB453 /* Info.plist */,
 				57238F34271D836D007CB453 /* main.m */,
@@ -411,6 +414,7 @@
 				57A355522727B45000BC902C /* pic25.png in Resources */,
 				57A355552727B45000BC902C /* pic3.png in Resources */,
 				57A3558A2727B45800BC902C /* light13.png in Resources */,
+				57A355972727C1A600BC902C /* bg.jpg in Resources */,
 				57A355482727B45000BC902C /* pic14.png in Resources */,
 				57A355952727B45800BC902C /* light8.png in Resources */,
 				57A355862727B45800BC902C /* light17.png in Resources */,

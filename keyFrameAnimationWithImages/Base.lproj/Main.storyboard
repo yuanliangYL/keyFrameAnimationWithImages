@@ -16,6 +16,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Afb-MY-iDp">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="box.png" translatesAutoresizingMaskIntoConstraints="NO" id="VSA-5D-74A">
                                 <rect key="frame" x="44.5" y="247" width="325" height="402"/>
                                 <constraints>
@@ -30,12 +33,16 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Afb-MY-iDp" secondAttribute="bottom" id="6aN-3v-OaA"/>
+                            <constraint firstItem="Afb-MY-iDp" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="A0O-II-DA4"/>
+                            <constraint firstItem="Afb-MY-iDp" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Cl0-TH-keK"/>
                             <constraint firstItem="qOS-nq-leI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.95" id="DoA-be-Rq9"/>
                             <constraint firstItem="qOS-nq-leI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HWd-BT-YYw"/>
                             <constraint firstItem="qOS-nq-leI" firstAttribute="height" secondItem="VSA-5D-74A" secondAttribute="height" multiplier="0.883085" id="Rfe-Cn-UTd"/>
                             <constraint firstItem="VSA-5D-74A" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SZW-G6-1Dz"/>
                             <constraint firstItem="qOS-nq-leI" firstAttribute="width" secondItem="VSA-5D-74A" secondAttribute="width" multiplier="1.00308" id="d4B-nS-FUi"/>
                             <constraint firstItem="VSA-5D-74A" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yf4-pL-cCh"/>
+                            <constraint firstItem="Afb-MY-iDp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ywC-kD-hYN"/>
                         </constraints>
                     </view>
                     <connections>
@@ -49,6 +56,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bg.jpg" width="1080" height="2337"/>
         <image name="box.png" width="324" height="402"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
